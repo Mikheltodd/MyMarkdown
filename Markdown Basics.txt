@@ -1,0 +1,86 @@
+----------------
+Markdown
+---------------
+
+Markdown Cells
+When you create a new cell, you have a few options in the drop down menu. When working with Markdown, make sure your cell is of the Markdown type, and not of the others.
+
+Headings
+----------------------------
+There are six levels of headings available. These are useful for organizing sections in your code. You use the octothorp, also called hashtag # and add the number of them that correspond to the heading level.
+
+Styling
+----------------------------
+You can add some styling with Strong and Emphasized text. In HTML there are the <strong> and <em> tags that denote different messages. Strong text shows strong importance for its contents, while emphasis is used to change the tone of a word or phrase as it might be emphasized in speech. Example (“I hate cilantro” vs. “I hate cilantro”).
+
+You can get emphasized text with either one asterisk * or underscore _ around the text. For Strong styling use two asterisks ** or underscores __ around the text.
+
+Code (monospace)
+----------------------------
+If you want to make monospace text which is good for denoting code, use a single ` called a back tick, back quote, or left quote around the text.
+
+Line Breaks
+----------------------------
+You can create new lines either by including a new line in the code, or using <br> inline with text. Using *** will give you a horizontal line.
+
+Lists (Unordered and Ordered)
+----------------------------
+For unordered lists use a hyphen - or asterisk * with a space before the text. If you want a sub bullet add a tab before the hyphen - or asterisk *.
+For ordered lists, use numbers followed by a period for the items like so 1.. Tabs still work for sub ordered lists.
+
+Images
+----------------------------
+You can add images from your directory or from the web ![title](img/picture.png). In between the two brackets our image name will take the place of title, and within the parentheses, the file path or url will take the place of img/picture.png.
+
+Links (External and Internal)
+------------------------------
+Adding external links are just like images without the exclamation point. Here is how you do it [link text](http://url)
+
+
+Hotkeys in Jupyter Notebook
+----------------------------
+Hotkeys or keyboard shortcuts can improve your efficiency and save time when you’re working with a new program. Instead of using your mouse which takes your hands off of the keyboard, you can access many of the common functionality with a combination of keys. Jupyter Notebook keyboard shortcuts can be accessed through help>keyboard shortcuts. You can also access them through pressing the Cmd + Shift + P keys for Mac or Ctrl + Shift + P for Linux/Windows to open the command palette. Through the palette you can search for keywords and find the command or use commands that don’t have a keyboard shortcut.
+
+Basic Commands
+----------------------------
+Basic navigation: Enter, Shift-Enter, Up/k, Down/j.
+Saving the notebook: s.
+Change Cell types: m to change the current cell to Markdown, y to change it back to code.
+Cell creation: a to insert a new cell above the current cell, b to insert a new cell below.
+Cell editing: x, c, v, d, z
+Delete Current Cell: d + d (press the key twice).
+Kernel operations: i, 0 (press twice).
+Split the current cell into two: Ctrl + Shift + -.
+Find and replace on your code: Esc + f
+Toggle cell output: Esc + O
+
+Inputting LaTeX
+---------------
+In the markdown cell, you can add LaTeX code between $ for inline outputs. You can also use two $$ to create its own centered paragraph in display mode.
+
+Important Notes:
+-------------------
+To add little spacing in display mode use \,
+To add a new line when in math display mode use \\
+To display fraction use \frac{arg 1}{arg 2}
+For power (superscripts text) use ^{}
+For indices (subscripts) use _{}
+For roots use \sqrt[n]{arg}
+The [n] is optional.
+
+
+Greek Letters
+-------------------
+Add \ to create greek letters. Capitalization also works.
+
+Magic Commands in Jupyter Notebook
+-----------------------------------
+There are also magic commands that can be used to when conducting data analysis in Ipython that can be highly effective when put to use. Magic commands will help you complete commonly executed tasks in your notebook, and come in two varieties; line magics and cell magics. Line magics contain a single percent symbol % prefix and work on a single line of input. Cell magics contain a double percent sign %% prefix and work on multiple lines of input. Here are some examples of magic commands:
+
+%lsmagic - Return a list all magic command
+%run: Execute external python script
+%load: Load in a local file, URL, function, or class
+%who: Return a list of any variables that have a certain type within the notebook.
+%matplotlib notebook: Allow you to interactively work with plots from matplotlib.
+%matplotlib inline: Allow you to disable interactivity with plots.
+%%time: Show the time it took to execute the line of code. Good for checking efficiency.
